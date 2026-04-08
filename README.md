@@ -89,6 +89,19 @@ El sistema contempla medidas para garantizar la protección de datos:
 /database → Scripts SQL de la base de datos y modelo de datos
 README.md    → Descripción del proyecto
 ```
+---
+
+🗄️ Base de datos   
+
+El proyecto incluye una base de datos relacional implementada en PostgreSQL.
+
+Los scripts necesarios para su creación y carga de datos de ejemplo se encuentran en la carpeta `/database`, incluyendo:
+
+- Creación de tablas (`schema.sql`)
+- Datos de prueba (`seed.sql`)
+
+Esto permite reproducir el entorno de desarrollo y validar el funcionamiento del sistema.
+
 
 ---
 
