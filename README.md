@@ -86,6 +86,7 @@ El sistema contempla medidas para garantizar la protección de datos:
 /docs        → Documentación del TFG
 /src         → Código fuente de la aplicación
 /assets      → Recursos gráficos
+/database → Scripts SQL de la base de datos y modelo de datos
 README.md    → Descripción del proyecto
 ```
 
