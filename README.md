@@ -2,115 +2,109 @@
 
 ## 🧾 Descripción del proyecto
 
-Este repositorio contiene el desarrollo del **Trabajo Fin de Grado en Ingeniería Informática** de Alexia Lasheras Cortina.
+Este repositorio contiene el desarrollo del Trabajo Fin de Grado en Ingeniería Informática realizado por Alexia Lasheras Cortina en la Universidad Internacional de La Rioja (UNIR).
 
-El proyecto consiste en el diseño y desarrollo de una **aplicación móvil** orientada a mejorar la **seguridad y la gestión del transporte escolar**, mediante el uso de tecnologías de geolocalización, control digital de menores y comunicación en tiempo real con las familias.
+El proyecto consiste en el diseño y desarrollo de una aplicación móvil orientada a mejorar la seguridad y la gestión del transporte escolar mediante el uso de tecnologías de geolocalización, control digital de menores y comunicación en tiempo real con las familias.
+
+La solución propuesta busca reducir situaciones de riesgo derivadas de errores humanos, como el olvido de menores en el interior del autobús, así como mejorar la comunicación entre cuidadores y familias durante los trayectos escolares.
 
 ---
 
-## 🎯 Objetivo
+## 🎯 Objetivos del proyecto
 
-El objetivo principal es desarrollar una solución tecnológica que permita:
+Los principales objetivos del sistema son:
 
-* Garantizar el control de los menores durante los trayectos
-* Evitar situaciones de riesgo (como olvidos en el vehículo)
-* Mejorar la comunicación entre cuidadores y familias
-* Proporcionar información en tiempo real sobre el estado del transporte
+* Mejorar la seguridad de los menores durante el transporte escolar.
+* Permitir el control digital de subida y bajada de los menores.
+* Facilitar el seguimiento del autobús en tiempo real mediante GPS.
+* Mejorar la comunicación entre cuidadores y familias.
+* Centralizar la gestión del trayecto en una única aplicación móvil.
 
 ---
 
 ## ⚙️ Funcionalidades principales
 
 * 👦 Registro digital de subida y bajada de menores
-* 📍 Seguimiento del autobús en tiempo real (GPS)
+* 📍 Seguimiento GPS del autobús en tiempo real
 * 🔔 Sistema de notificaciones automáticas
 * 👨‍👩‍👧‍👦 Acceso diferenciado para cuidadores y familias
 * 🔐 Gestión de usuarios y autenticación
 * 📊 Control del estado del trayecto
+* ⚠️ Gestión de incidencias durante la ruta
 
 ---
 
 ## 🏗️ Arquitectura del sistema
 
-El sistema se basa en una arquitectura **cliente-servidor**, compuesta por:
+El sistema se basa en una arquitectura cliente-servidor compuesta por:
 
-* **Frontend (Aplicación móvil)**
-* **Backend en la nube**
-* **Base de datos en tiempo real**
-
-Tecnologías utilizadas (propuesta):
-
-* Flutter / React Native (frontend)
-* Firebase (backend y base de datos)
-* Servicios de geolocalización (GPS)
-
----
-
-## 🧪 Estado del proyecto
-
-🚧 Proyecto en desarrollo
-
-Actualmente se encuentra en fase de:
-
-* Análisis de requisitos
-* Diseño de arquitectura
-* Definición de funcionalidades
+* Aplicación móvil Android
+* Backend en la nube
+* Base de datos en tiempo real
+* Servicios de geolocalización y notificaciones
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 
-* Desarrollo móvil multiplataforma
-* Servicios en la nube
-* Sistemas de geolocalización
-* Notificaciones push
-
-*(Las tecnologías concretas podrán evolucionar durante el desarrollo del proyecto)*
-
----
-
-## 🔐 Seguridad y privacidad
-
-El sistema contempla medidas para garantizar la protección de datos:
-
-* Autenticación segura de usuarios
-* Control de acceso por roles
-* Protección de datos sensibles
-* Cumplimiento del RGPD
+* Java
+* Android Studio
+* Firebase Authentication
+* Cloud Firestore
+* Firebase Cloud Messaging
+* Google Maps API
+* Git y GitHub
 
 ---
 
 ## 📂 Estructura del repositorio
 
+```text
+tfg-transporte-escolar-app/
+├── README.md
+├── app/
+├── database/
+├── docs/
+│   ├── memoria/
+│   ├── diagramas/
+│   ├── mockups/
+│   ├── planificacion/
+│   └── capturas/
+└── anexos/
 ```
-/docs        → Documentación del TFG
-/src         → Código fuente de la aplicación
-/assets      → Recursos gráficos
-/database → Scripts SQL de la base de datos y modelo de datos
-README.md    → Descripción del proyecto
-```
+
 ---
 
-🗄️ Base de datos   
+## 🗄️ Base de datos
 
-El proyecto incluye una base de datos relacional implementada en PostgreSQL.
+La carpeta `/database` incluye:
 
-Los scripts necesarios para su creación y carga de datos de ejemplo se encuentran en la carpeta `/database`, incluyendo:
+* Scripts SQL de creación de tablas
+* Datos de prueba
+* Modelo de datos
+* Diagramas entidad-relación
 
-- Creación de tablas (`schema.sql`)
-- Datos de prueba (`seed.sql`)
+El diseño del sistema combina un modelo estructurado de datos con almacenamiento en tiempo real mediante Firebase.
 
-Esto permite reproducir el entorno de desarrollo y validar el funcionamiento del sistema.
+---
 
+## 🔐 Seguridad y privacidad
+
+El sistema incorpora medidas orientadas a la protección de datos y la seguridad de la información:
+
+* Autenticación segura de usuarios
+* Control de acceso basado en roles
+* Restricción de acceso a datos sensibles
+* Cumplimiento del RGPD
 
 ---
 
 ## 📈 Líneas futuras
 
-* Implementación completa en entorno real
-* Integración con sistemas educativos
-* Uso de tecnologías como RFID o QR
-* Aplicación de inteligencia artificial para optimización de rutas
+* Validación en entorno real
+* Integración con plataformas educativas
+* Uso de tecnologías RFID o QR
+* Optimización de rutas mediante inteligencia artificial
 
 ---
 
@@ -124,10 +118,11 @@ Universidad Internacional de La Rioja (UNIR)
 
 ## 📄 Licencia
 
-Este proyecto se publica bajo licencia **MIT**, permitiendo su uso, modificación y distribución con fines académicos y educativos.
+Proyecto publicado con fines académicos y educativos.
 
 ---
 
-## 🔗 Enlace al TFG
+## 🔗 Repositorio del proyecto
 
-(Se añadirá una vez finalizado el documento)
+Repositorio GitHub:
+https://github.com/aixela30-bot/tfg-transporte-escolar-app
