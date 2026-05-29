@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#E3F2FD">
+
+    <TextView
+        android:id="@+id/txtTituloGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ruta GPS"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/txtEstadoRuta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado de ruta"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/txtUbicacionActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubicación actual"
+        android:textSize="18sp"
+        android:layout_marginBottom="28dp" />
+
+    <Button
+        android:id="@+id/btnActualizarGps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar ubicación"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:textSize="18sp" />
+
+</LinearLayout>

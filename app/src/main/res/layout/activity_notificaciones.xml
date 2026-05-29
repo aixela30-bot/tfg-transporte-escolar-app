@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#E3F2FD">
+
+    <TextView
+        android:id="@+id/txtTituloNotificaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/txtMensajeNotificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona una notificación para enviar"
+        android:textSize="18sp"
+        android:layout_marginBottom="28dp" />
+
+    <Button
+        android:id="@+id/btnEnviarSubida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar aviso de subida"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnEnviarBajada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar aviso de bajada"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnEnviarIncidencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar aviso de incidencia"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:textSize="18sp" />
+
+</LinearLayout>
