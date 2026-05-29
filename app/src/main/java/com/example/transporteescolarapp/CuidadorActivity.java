@@ -13,6 +13,7 @@ public class CuidadorActivity extends AppCompatActivity {
     Button btnEnviarNotificacion;
     Button btnVerIncidencias;
     Button btnVolver;
+    Button btnHistorialRutas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class CuidadorActivity extends AppCompatActivity {
         btnRutaGps = findViewById(R.id.btnRutaGps);
         btnEnviarNotificacion = findViewById(R.id.btnEnviarNotificacion);
         btnVerIncidencias = findViewById(R.id.btnVerIncidencias);
+        btnHistorialRutas = findViewById(R.id.btnHistorialRutas);
         btnVolver = findViewById(R.id.btnVolver);
 
         btnListaMenores.setOnClickListener(v -> {
@@ -53,6 +55,14 @@ public class CuidadorActivity extends AppCompatActivity {
             Intent intent = new Intent(
                     CuidadorActivity.this,
                     IncidenciasActivity.class
+            );
+            startActivity(intent);
+        });
+
+        btnHistorialRutas.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    CuidadorActivity.this,
+                    HistorialRutasActivity.class
             );
             startActivity(intent);
         });

@@ -56,6 +56,16 @@
         android:layout_marginBottom="20dp"
         android:padding="12dp" />
 
+
+    <Button
+        android:id="@+id/btnHistorialRutas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historial de rutas"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:padding="12dp" />
+
     <Button
         android:id="@+id/btnVolver"
         android:layout_width="match_parent"

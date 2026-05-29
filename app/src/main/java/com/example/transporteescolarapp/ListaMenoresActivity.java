@@ -66,6 +66,14 @@ public class ListaMenoresActivity extends AppCompatActivity {
                         Color.parseColor("#43A047")
                 );
 
+                DatosApp.historialRutas.add(
+                        new Ruta(
+                                "29/05/2026",
+                                "Finalizada",
+                                DatosApp.incidencias.size()
+                        )
+                );
+
                 Toast.makeText(
                         this,
                         "Todos los menores han bajado",

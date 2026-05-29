@@ -10,4 +10,6 @@ public class DatosApp {
 
     public static ArrayList<Incidencia> incidencias =
             new ArrayList<>();
+    public static ArrayList<Ruta> historialRutas =
+            new ArrayList<>();
 }
