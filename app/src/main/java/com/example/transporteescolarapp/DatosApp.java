@@ -12,4 +12,16 @@ public class DatosApp {
             new ArrayList<>();
     public static ArrayList<Ruta> historialRutas =
             new ArrayList<>();
+
+    public static ArrayList<Parada> paradas =
+            new ArrayList<>();
+
+
+    static {
+
+        paradas.add(new Parada("Mungia Centro", "07:45"));
+        paradas.add(new Parada("Larramendi Ikastola", "08:00"));
+        paradas.add(new Parada("Arene", "08:10"));
+        paradas.add(new Parada("Billela", "08:20"));
+    }
 }

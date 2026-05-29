@@ -18,6 +18,7 @@
         <activity android:name=".NotificacionesActivity" />
         <activity android:name=".IncidenciasActivity" />
         <activity android:name=".HistorialRutasActivity" />
+        <activity android:name=".ParadasActivity" />
 
 
         <activity
