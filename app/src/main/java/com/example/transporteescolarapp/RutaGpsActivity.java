@@ -3,48 +3,51 @@ package com.example.transporteescolarapp;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RutaGpsActivity extends AppCompatActivity {
 
-    TextView txtEstadoRuta;
-    TextView txtUbicacionActual;
-    Button btnActualizarGps;
-    Button btnVolver;
+    TextView txtUbicacionActual, pinMapa;
+    Button btnActualizarGps, btnVolver;
 
-    int paradaActual = 1;
+    int posicionActual = 0;
+
+    String[] ubicaciones = {
+            "📍 Ubicación actual: Aeropuerto de Bilbao",
+            "📍 Ubicación actual: Laukariz",
+            "📍 Ubicación actual: Mungia",
+            "📍 Ubicación actual: Larramendi Ikastola"
+    };
+
+    float[] posicionesX = {30f, 120f, 190f, 235f};
+    float[] posicionesY = {180f, 145f, 70f, 95f};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ruta_gps);
 
-        txtEstadoRuta = findViewById(R.id.txtEstadoRuta);
         txtUbicacionActual = findViewById(R.id.txtUbicacionActual);
+        pinMapa = findViewById(R.id.pinMapa);
         btnActualizarGps = findViewById(R.id.btnActualizarGps);
         btnVolver = findViewById(R.id.btnVolver);
 
-        txtEstadoRuta.setText("Estado de ruta: En curso");
-        txtUbicacionActual.setText("Ubicación actual: Parada 1");
+        actualizarPantalla();
 
         btnActualizarGps.setOnClickListener(v -> {
-            paradaActual++;
-
-            if (paradaActual == 2) {
-                txtUbicacionActual.setText("Ubicación actual: Parada 2");
-            } else if (paradaActual == 3) {
-                txtUbicacionActual.setText("Ubicación actual: Parada 3");
-            } else if (paradaActual == 4) {
-                txtUbicacionActual.setText("Ubicación actual: Llegando a la ikastola");
-            } else {
-                txtEstadoRuta.setText("Estado de ruta: Finalizada");
-                txtUbicacionActual.setText("Ubicación actual: Ikastola");
-                Toast.makeText(this, "La ruta ha finalizado", Toast.LENGTH_SHORT).show();
+            if (posicionActual < ubicaciones.length - 1) {
+                posicionActual++;
             }
+            actualizarPantalla();
         });
 
         btnVolver.setOnClickListener(v -> finish());
+    }
+
+    private void actualizarPantalla() {
+        txtUbicacionActual.setText(ubicaciones[posicionActual]);
+        pinMapa.setTranslationX(posicionesX[posicionActual]);
+        pinMapa.setTranslationY(posicionesY[posicionActual]);
     }
 }
