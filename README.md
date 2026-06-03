@@ -4,9 +4,9 @@
 
 Este repositorio contiene el desarrollo del Trabajo Fin de Grado (TFG) en Ingeniería Informática realizado por **Alexia Lasheras Cortina** en la **Universidad Internacional de La Rioja (UNIR)**.
 
-El proyecto consiste en el diseño y desarrollo de una aplicación móvil Android orientada a mejorar la seguridad y la gestión del transporte escolar mediante herramientas digitales que facilitan el control de los menores durante los trayectos y mejoran la comunicación entre cuidadores y familias.
+El proyecto consiste en el diseño y desarrollo de una aplicación móvil Android orientada a mejorar la seguridad y la gestión del transporte escolar mediante herramientas digitales que facilitan el control de menores durante los trayectos y mejoran la comunicación entre cuidadores y familias.
 
-La solución propuesta nace como respuesta a una problemática real relacionada con la supervisión de menores durante el transporte escolar y la necesidad de proporcionar información actualizada a las familias sobre el estado del servicio.
+La solución propuesta busca minimizar situaciones de riesgo derivadas de errores humanos, mejorar la supervisión de los usuarios transportados y proporcionar información actualizada sobre el estado del servicio de transporte escolar.
 
 ---
 
@@ -28,7 +28,7 @@ Los principales objetivos del sistema son:
 ### 👤 Gestión de usuarios
 
 * Inicio de sesión.
-* Acceso diferenciado para cuidadores y familias.
+* Acceso diferenciado según el perfil de usuario.
 * Navegación entre módulos de la aplicación.
 
 ### 🚌 Gestión del transporte escolar
@@ -40,7 +40,7 @@ Los principales objetivos del sistema son:
 
 ### 📍 Seguimiento de rutas
 
-* Visualización de la ruta escolar.
+* Visualización de rutas escolares.
 * Consulta de paradas.
 * Consulta de horarios asociados a las paradas.
 
@@ -67,9 +67,9 @@ La solución está compuesta por:
 * Interfaz gráfica desarrollada mediante XML.
 * Lógica de negocio implementada en Java.
 * Navegación basada en Activities e Intents.
-* Estructuras de datos utilizadas para la validación funcional del sistema.
+* Estructuras de datos locales utilizadas para la validación funcional del sistema.
 
-La arquitectura ha sido diseñada para permitir futuras integraciones con servicios de persistencia de datos, geolocalización en tiempo real y sistemas avanzados de notificación.
+La arquitectura ha sido diseñada para facilitar futuras integraciones con sistemas de persistencia de datos, servicios de geolocalización y plataformas de comunicación en tiempo real.
 
 ---
 
@@ -82,7 +82,7 @@ La arquitectura ha sido diseñada para permitir futuras integraciones con servic
 * Android SDK
 * XML
 
-## Gestión del proyecto
+## Control de versiones
 
 * Git
 * GitHub
@@ -101,18 +101,22 @@ La arquitectura ha sido diseñada para permitir futuras integraciones con servic
 ```text
 tfg-transporte-escolar-app/
 │
-├── app/
-├── database/
-├── docs/
+├── app/                  # Código fuente Android
+├── docs/                 # Documentación del proyecto
 │   ├── memoria/
 │   ├── diagramas/
 │   ├── mockups/
+│   ├── capturas/
 │   ├── planificacion/
-│   └── capturas/
-├── anexos/
+│   └── entregas/
+│
+├── gradle/
 ├── README.md
-├── LICENSE
-└── archivos de configuración Android Studio
+├── build.gradle.kts
+├── settings.gradle.kts
+├── gradle.properties
+├── gradlew
+└── gradlew.bat
 ```
 
 ---
@@ -136,9 +140,9 @@ La implementación actual utiliza estructuras de datos locales para la validaci�
 
 # 🔐 Seguridad y privacidad
 
-El diseño de la aplicación tiene en consideración aspectos relacionados con la seguridad y la protección de la información.
+La aplicación ha sido diseñada considerando aspectos relacionados con la protección de datos y la seguridad de la información.
 
-Entre las medidas contempladas se encuentran:
+Entre las medidas contempladas destacan:
 
 * Diferenciación de perfiles de usuario.
 * Restricción de acceso según rol.
@@ -149,7 +153,7 @@ Entre las medidas contempladas se encuentran:
 
 # 🧪 Pruebas realizadas
 
-Durante el desarrollo se realizaron pruebas funcionales sobre las principales características del sistema:
+Durante el desarrollo se realizaron pruebas funcionales sobre las principales características de la aplicación:
 
 * Inicio de sesión.
 * Navegación entre pantallas.
@@ -158,7 +162,7 @@ Durante el desarrollo se realizaron pruebas funcionales sobre las principales ca
 * Visualización de información para familias.
 * Funcionamiento de botones y navegación general.
 
-Los resultados obtenidos permitieron validar el correcto funcionamiento de las funcionalidades implementadas en esta versión del proyecto.
+Los resultados obtenidos permitieron validar el correcto funcionamiento de las funcionalidades implementadas.
 
 ---
 
@@ -167,8 +171,8 @@ Los resultados obtenidos permitieron validar el correcto funcionamiento de las f
 Entre las posibles evoluciones futuras del sistema destacan:
 
 * Integración completa con Firebase.
-* Persistencia de datos en la nube mediante Cloud Firestore.
-* Geolocalización en tiempo real mediante Google Maps.
+* Persistencia de datos mediante Cloud Firestore.
+* Geolocalización en tiempo real utilizando Google Maps.
 * Notificaciones push mediante Firebase Cloud Messaging.
 * Integración con plataformas educativas.
 * Incorporación de tecnologías RFID o códigos QR para el control automático de asistencia.
@@ -183,7 +187,7 @@ Entre las posibles evoluciones futuras del sistema destacan:
 Grado en Ingeniería Informática
 Universidad Internacional de La Rioja (UNIR)
 
-Trabajo Fin de Grado - Curso 2025/2026
+Trabajo Fin de Grado – Curso 2025/2026
 
 ---
 
@@ -198,4 +202,3 @@ Se permite el uso, modificación y distribución del software de acuerdo con los
 # 🔗 Repositorio del proyecto
 
 https://github.com/aixela30-bot/tfg-transporte-escolar-app
-
